@@ -1,0 +1,247 @@
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: ao00097(66, 96)
+w - [UNNAMED] Occupying init cell - ao00097.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: ep00216(171, 215)
+w - [UNNAMED] Occupying init cell - ep00216.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: af00180(57, 179)
+w - [UNNAMED] Occupying init cell - af00180.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: cj00217(113, 216)
+w - [UNNAMED] Occupying init cell - cj00217.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: ex00246(179, 245)
+w - [UNNAMED] Occupying init cell - ex00246.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: hh00005(241, 4)
+w - [UNNAMED] Occupying init cell - hh00005.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: fw00141(204, 140)
+w - [UNNAMED] Occupying init cell - fw00141.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: eu00165(176, 164)
+w - [UNNAMED] Occupying init cell - eu00165.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: ao00107(66, 106)
+w - [UNNAMED] Occupying init cell - ao00107.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: by00169(102, 168)
+w - [UNNAMED] Occupying init cell - by00169.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: m00082(12, 81)
+w - [UNNAMED] Occupying init cell - m00082.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: bw00008(100, 7)
+w - [UNNAMED] Occupying init cell - bw00008.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: j00135(9, 134)
+w - [UNNAMED] Occupying init cell - j00135.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: br00240(95, 239)
+w - [UNNAMED] Occupying init cell - br00240.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: gq00196(224, 195)
+w - [UNNAMED] Occupying init cell - gq00196.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: dt00136(149, 135)
+w - [UNNAMED] Occupying init cell - dt00136.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing grid entity [UNNAMED].
+w - Instantiating logical entity UNNAMED.
+w - [UNNAMED] Finding initial cell.
+w - [UNNAMED] Initial cell: cf00117(109, 116)
+w - [UNNAMED] Occupying init cell - cf00117.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
+w - Initializing abstract entity class.
+w - Initializing base entity class.
+w - Initializing entity class.
+w - Initializing logical entity class.
+w - Initializing visual entity class.
+w - Initializing abstract grid entity class.
