@@ -1,7 +1,8 @@
 import random
 from typing import Union
 from CharActor import create, character_bank, Catalogues
-from grid_engine import Grid, Cell, Blueprint
+from grid_engine import Grid
+from .meta import *
 
 # Let's create a class to hold our game state
 # The game state will include the grid and the characters
@@ -38,6 +39,9 @@ class Game:
         self.grid.catalogues = Catalogues
         self.grid.goods = Catalogues.Goods
         self.grid.armory = Catalogues.Armory
+        self.item_factory = GridItemMetaFactory
+        self.item_factory.init_grid(self.grid)
+        self.add_random_items(10)
         
     @property
     def items_on_grid(self) -> list:
@@ -50,7 +54,7 @@ class Game:
     
     @property
     def item_list(self) -> list:
-        return list(self.grid.goods.items.keys())+list(self.grid.armory.items.keys())
+        return list(self.grid.goods.general_manifest)+list(self.grid.goods.trade_manifest)+list(self.grid.armory.weapons_manifest)+list(self.grid.armory.armor_manifest)
         
     def add_character(self, character) -> None:
         self.character_count += 1
@@ -61,17 +65,19 @@ class Game:
         create()
         return getattr(character_bank, f'char{self.character_count+1}')
     
-    def add_item(self, item_name: str, cell: Union[str, object] = None) -> None:
-        if cell is None:
-            cell = self.grid.random_cell(attr=('passable', True))
-        if isinstance(cell, str):
-            cell = self.grid[cell]
-        if item_name is None:
-            item_name = random.choice(list(self.grid.goods.items.keys())+list(self.grid.armory.items.keys()))
-        self.grid.catalogues.get(item_name, self.grid, cell)
-
-    def add_random_item(self):
-        self.add_item(None)
+    def add_item(self, item_name: str = None, cell: Union[str, object] = None) -> None:
+        if item_name is None and cell is None:
+            GridItemMetaFactory.create_random_item()
+        elif item_name is not None and cell is None:
+            GridItemMetaFactory.create_item_by_class(item_name)
+        elif item_name is None:
+            GridItemMetaFactory.create_random_item(cell=cell)
+        else:
+            GridItemMetaFactory.create_item(item_name, cell)
+            
+        
+    def add_random_item(self, cell = None):
+        self.add_item(cell=cell)
         
     def add_random_items(self, n: int):
         for _ in range(n):

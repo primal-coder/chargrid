@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='chargrid',
-    version='0.0.1',
+    version='0.0.2',
     description='An implementation of gridengine_framework and the CharActor that combines the two',
     author='James Evans',
     author_email='joesaysahoy@gmail.com',
