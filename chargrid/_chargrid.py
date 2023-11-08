@@ -33,15 +33,20 @@ class Game:
         self._chaaracters = characters
         
     def __init__(self):
-        self.grid = Grid.Grid(cell_size=1, dimensions=(500, 500))
+        print('Generating grid...')
+        self.grid = Grid.Grid(cell_size=1, dimensions=(300, 300))
+        print('Generating characters...')
         self.character_count = 0
         self.add_character(self.create_random_character())
+        print('Adding catalogues...')
         self.grid.catalogues = Catalogues
         self.grid.goods = Catalogues.Goods
         self.grid.armory = Catalogues.Armory
+        print('Adding items...')
         self.item_factory = GridItemMetaFactory
         self.item_factory.init_grid(self.grid)
         self.add_random_items(10)
+        print('Done!')
         
     @property
     def items_on_grid(self) -> list:
