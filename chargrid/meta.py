@@ -1,19 +1,38 @@
-import re
+from typing import Type
 import random
-import CharActor as CA
-from CharActor._objects._items.item import _Item
-from grid_engine import Grid, Cell, GridObject
-from grid_engine._grid_object.grid_item import GridItem
+from CharObj import Item as _Item
+from grid_engine import grid as Grid, cell as Cell, grid_object as GridObject
 
 
 class GridItemMetaFactory:
+    """This class merges the functionality of the Goods and Armory catalogues 
+    present in the CharObj module and the GridItem class present in the GridObject submodule of the grid_engine module.
+    The purpose of this class is to allow the creation of items that inherit from GridItem and a class of item present 
+    in the catalogues. Thereby, the items created will automatically be added to the grid. The items created with this class
+    can be interacted with by characters created using the CharActor module, provided the two inhabit the same grid. 
+    The class also provides a method to create a random item and a method to create an item by name. The class also 
+    provides a method to check that the GRID variable has been set before any items are created.
+    
+    Attributes:
+        GRID (type(Grid.Grid)): The grid to add the items to
+        GOODS (type(Goods)): The goods catalogue
+        ARMORY (type(Armory)): The armory catalogue
+        CLASSES (list): A list of all the classes in the catalogue
+    
+    Methods:
+        init_grid(grid: type(Grid.Grid)): This method sets the variable GRID and CLASSES to the grid and the classes in the catalogues respectively.
+        create_item_by_class(Class: type
+        create_random_item(cell = None): This method creates an instance of a random class that inherits from GridItem and a class of item present in the catalogues.
+        create_item(item_name, cell = None): This method creates an instance of a class that inherits from GridItem and a class of item present in the catalogues.
+        _check_grid(): This method checks that the GRID variable has been set before any items are created.
+    """
     GRID = None
     GOODS = None
     ARMORY = None
     CLASSES = None
 
     @staticmethod
-    def init_grid(grid: type(Grid.Grid)):
+    def init_grid(grid: Type[Grid.Grid]):
         """This method sets the variable GRID and CLASSES to the grid and the classes in the catalogues respectively."""
         GridItemMetaFactory.GRID = grid
         GridItemMetaFactory.GOODS = grid.goods
@@ -21,13 +40,12 @@ class GridItemMetaFactory:
         GridItemMetaFactory.CLASSES = list(grid.goods.items.values()) + list(grid.armory.items.values())
         
     @staticmethod
-    def create_item_by_class(Class: type(_Item), cell: type(Cell.Cell) = None) -> type(GridObject.GridItem):
+    def create_item_by_class(Class: Type[_Item], cell: Type[Cell.Cell] = None, no_cell: bool = None) -> Type[GridObject.GridItem]:
         """This method creates an instance of a class that inherits from GridItem and a class of item present in the catalogues.
         It then adds the instance to the appropriate catalogue and returns the instance. By subclassing GridItem, the item will
         automatically be added to the grid.
         
         Args:
-            grid (type(Grid.Grid)): The grid to add the item to
             cell (type(Cell.Cell)): The cell to add the item to
             Class (type(_Item)): The class to create an instance of
         
@@ -37,7 +55,10 @@ class GridItemMetaFactory:
         grid = GridItemMetaFactory.GRID
         Goods = GridItemMetaFactory.GOODS
         Armory = GridItemMetaFactory.ARMORY
-        cell = cell if cell is not None else grid.random_cell(attr=('passable', True))
+        if not no_cell:
+            cell = cell if cell is not None else grid.random_cell(attr=('passable', True))
+        else:
+            cell = None
         if Class in GridItemMetaFactory.CLASSES:
             grid_class = type(Class.__name__, (GridObject.GridItem, Class), {}) # This creates a new class that inherits from GridItem and the class passed in as an argument
             instance = grid_class(grid=grid, cell=cell, name=Class.__name__) # This creates an instance of the new class and passes in the grid and cell arguments
