@@ -133,9 +133,6 @@ class Dungeon:
 
 
 # Parameters for the dungeon
-max_rooms = 40
-min_room_size = 50
-max_room_size = 200
 
 class Game:
     _grid = None
@@ -188,13 +185,15 @@ class Game:
     def task_list(self, task_list: list) -> None:
         self._task_list = task_list
         
-    def __init__(self, dimensions):
+    def __init__(self, map_type: str = 'land', dimensions: tuple = (540, 460)):
         print('Generating grid...')
-        self.dungeon = Dungeon(*dimensions, max_rooms, min_room_size, max_room_size)
-        
-        self.dungeon.place_rooms()
-        self.dungeon.connect_rooms()
-        self.grid = self.dungeon.grid
+        if map_type == 'land':
+            self.grid = ge.grid.Grid(cell_size=2, dimensions=dimensions, with_terrain=False)
+        elif map_type == 'dungeon':
+            self.dungeon = Dungeon(*dimensions, 20, 10, 20)    
+            self.dungeon.place_rooms()
+            self.dungeon.connect_rooms()
+            self.grid = self.dungeon.grid
         print('Generating characters...')
         self.character_count = 0
         self.add_character(self.create_random_character())
@@ -250,10 +249,9 @@ class Game:
     def add_character(self, character) -> None:
         self.character_count += 1
         self.characters.append(character)
-        character._join_grid(self.grid)
         
     def create_random_character(self):
-        create()
+        create(grid=self.grid)
         return getattr(character_bank, f'char{self.character_count+1}')
     
     def add_item(self, item_name: str = None, cell: Union[str, object] = None) -> None:
